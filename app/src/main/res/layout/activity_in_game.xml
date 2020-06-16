@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InGameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/in_game_background">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#00498c"
+            android:id="@+id/diff_count"
+            android:background="@drawable/in_game_background_right"
+            android:text="난이도"/>
+
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:lines="1"
+            android:gravity="center"
+            android:id="@+id/game_input"
+            android:textStyle="bold"
+            android:hint="단어 입력"/>
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/in_game_background_left"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="맞춘 단어 :  "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textColor="#003458"
+                    android:id="@+id/game_count"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="점수 :  "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#6937a1"
+                    android:text="0"
+                    android:id="@+id/game_score"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시간 설정 중..."
+        android:textSize="30dp"
+        android:textColor="#009e51"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:id="@+id/timer"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:stretchColumns="*">
+
+            <TableRow>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view1"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view2"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view3"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view4"/>
+            </TableRow>
+
+            <TableRow>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view5"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view6"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view7"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view8"/>
+            </TableRow>
+
+            <TableRow>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view9"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view10"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view11"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view12"/>
+            </TableRow>
+
+            <TableRow>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view13"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view14"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view15"/>
+                <Button android:background="@drawable/in_game_background_button"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/view16"/>
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/color_main"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:text="글로벌 타자연습"
+        android:textColor="#622422"
+        android:background="@drawable/custom_titlebar"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:gravity="center_vertical|center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TableLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="게임 시작"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_Start"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="기록 확인"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_Stats"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="게임 종료"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/custom_title"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_Exits"/>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

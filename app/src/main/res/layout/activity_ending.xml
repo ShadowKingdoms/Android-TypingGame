@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EndingActivity">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="게임 종료!"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_endtitle"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#b01030"
+        android:text="-어려움-"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/ending_diff"/>
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="#682aae"
+                android:textSize="20dp"
+                android:text="맞춘 단어 : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="10개"
+                android:id="@+id/ending_count"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#159815"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="점 수 : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="100점"
+                android:id="@+id/ending_score"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="#003663"
+                android:textSize="20dp"
+                android:text="최대 콤보(연속) : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="20개"
+                android:id="@+id/ending_maxCombo"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="100dp"
+            android:textStyle="bold|italic"
+            android:textColor="#e763e2"
+            android:text="S"
+            android:id="@+id/ending_Rank"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:id="@+id/ratingBar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="ID 입력 : "/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:privateImeOptions="defaultInputmode=english;"
+                android:hint="    닉네임     "
+                android:id="@+id/edit_NickName"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_endbutton"
+            android:text="메인 화면"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:id="@+id/btn_Return"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:layout_width="105dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_endbutton"
+            android:layout_height="match_parent"
+            android:text="전적 저장"
+            android:textSize="22dp"
+            android:id="@+id/btn_Saves"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

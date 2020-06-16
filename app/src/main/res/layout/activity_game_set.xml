@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@drawable/custom_ingmae"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="게임 설정"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/color_set"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5d4037"
+        android:text=" 난이도 선택 "
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_difficulty"
+        android:checkedButton="@id/diff_normal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#009000"
+            android:text="쉬움"
+            android:id="@+id/diff_easy"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000080"
+            android:text="보통"
+            android:id="@+id/diff_normal"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#9c0a21"
+            android:text="어려움"
+            android:id="@+id/diff_hard"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5d4037"
+        android:text=" 시작 단어 수 선택 "
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_words"
+        android:checkedButton="@id/word_size5">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="5개"
+            android:id="@+id/word_size5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="7개"
+            android:id="@+id/word_size7"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5d4037"
+        android:text=" 단어 타입 설정 "
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_language"
+        android:checkedButton="@id/lan_kor">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="국어"
+            android:id="@+id/lan_kor"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="영어"
+            android:id="@+id/lan_eng"/>
+    </RadioGroup>
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 플레이 시간 설정(초) : "
+        android:textColor="#5d4037"
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="60"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/seekBar_time"/>
+</LinearLayout>
+
+    <SeekBar
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="30"
+        android:max="180"
+        android:progress="60"
+        android:id="@+id/seekBar" />
+
+    </LinearLayout>
+
+</LinearLayout>

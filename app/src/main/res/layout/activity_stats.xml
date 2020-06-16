@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StatsActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="명예의 전당"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_statstitle"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-한글 전적-"
+        android:textColor="#689f38"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/text_language"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_kor">
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editID"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editScore"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editCount"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editMax"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editRank"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:id="@+id/linear_eng">
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editID2"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editScore2"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editCount2"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editMax2"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:id="@+id/editRank2"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
