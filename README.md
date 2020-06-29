@@ -15,5 +15,4 @@
 
 
 # 영 상
-
 [![Watch the video](https://user-images.githubusercontent.com/55690757/85986631-88cf4f80-ba27-11ea-96fd-3fed904f38f1.JPG)](https://youtu.be/uflQN652Kdg)
